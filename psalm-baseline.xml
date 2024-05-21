@@ -32,15 +32,15 @@
       <code>(string) $value</code>
     </RedundantCast>
     <UndefinedFunction>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a bool to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a bool to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a bool to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string or null to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing an int or null to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing an int, string or null to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a bool to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a bool to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a bool to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string or null to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing a string to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing an int or null to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing an int, string or null to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
     </UndefinedFunction>
   </file>
   <file src="src/Handler/CurlFactory.php">
@@ -72,6 +72,10 @@
     <PossiblyInvalidCast>
       <code>$sslKey</code>
     </PossiblyInvalidCast>
+    <UndefinedDocblockClass>
+      <code>private $handles = [];</code>
+      <code>resource[]|\CurlHandle[]</code>
+    </UndefinedDocblockClass>
   </file>
   <file src="src/Handler/CurlHandler.php">
     <PossiblyInvalidArgument>
@@ -102,18 +106,25 @@
     <TypeDoesNotContainType>
       <code>false === $multiHandle</code>
     </TypeDoesNotContainType>
+    <UndefinedDocblockClass>
+      <code>resource|\CurlMultiHandle</code>
+      <code>resource|\CurlMultiHandle</code>
+    </UndefinedDocblockClass>
     <UndefinedFunction>
-      <code><![CDATA[trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing an integer to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)]]></code>
+      <code>trigger_deprecation('guzzlehttp/guzzle', '7.4', 'Not passing an integer to %s::%s() is deprecated and will cause an error in 8.0.', __CLASS__, __FUNCTION__)</code>
     </UndefinedFunction>
   </file>
   <file src="src/Handler/EasyHandle.php">
     <InvalidReturnType>
       <code>void</code>
     </InvalidReturnType>
+    <UndefinedDocblockClass>
+      <code>resource|\CurlHandle</code>
+    </UndefinedDocblockClass>
   </file>
   <file src="src/Handler/MockHandler.php">
     <ArgumentTypeCoercion>
-      <code><![CDATA[(int) $options['delay'] * 1000]]></code>
+      <code>(int) $options['delay'] * 1000</code>
     </ArgumentTypeCoercion>
   </file>
   <file src="src/Handler/StreamHandler.php">
@@ -248,14 +259,8 @@
     <ForbiddenCode>
       <code>\var_dump($input)</code>
     </ForbiddenCode>
-    <PossiblyFalseOperand>
-      <code>\hrtime(true)</code>
-    </PossiblyFalseOperand>
     <PossiblyInvalidCast>
       <code>$_SERVER[$name]</code>
     </PossiblyInvalidCast>
-    <PossiblyInvalidOperand>
-      <code>1e9</code>
-    </PossiblyInvalidOperand>
   </file>
 </files>
