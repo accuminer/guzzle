@@ -25,6 +25,9 @@ class CurlMultiHandler
     private $delays = [];
     private $options = [];
 
+    /** @var PHP8.3 declaration */
+    private $_mh;
+
     /**
      * This handler accepts the following options:
      *
